@@ -3,7 +3,7 @@ package com.m2i.poe;
 public class Main {
 
     public static void main(String[] args) {
-        int[] tab = {2,-2,99,88,7,13,12,10,18,22};
+        int[] tab = {3,2,1};
         System.out.println(isPrime(7));
         System.out.println(isPrime(6));
         System.out.println(isPrime(0));
@@ -12,6 +12,8 @@ public class Main {
         for(int i:result) {
             System.out.println(i);
         }
+        System.out.println(factorielle(5));
+        System.out.println(multiplier_recursif(tab,tab.length));
     }
 
     /**
@@ -46,4 +48,51 @@ public class Main {
         }
         return result;
     }
+
+    public static int factorielle(int n) {
+        if (n==0 || n==1) {
+            return 1;
+        }
+        else {
+            int temp = n * factorielle(n - 1);
+            return temp;
+        }
+    }
+
+    public static int multiplier_classic(int[] tab) {
+        int res = 1;
+        for(int i:tab) {
+            res *= i;
+        }
+        return res;
+    }
+
+    public static int multiplier_recursif(int[] tab, int n) {
+        if (n == 1) {
+            return tab[0];
+        }
+        else {
+            return tab[n-1] * multiplier_recursif(tab, n-1);
+        }
+    }
+
+    public int sum(int[] tab) {
+        int res = 0;
+        for(int i:tab) {
+            res+=i;
+        }
+        return res;
+    }
+
+    public int max(int[] tab) {
+        int res = tab[0];
+        for(int i:tab) {
+            if(i > res) {
+                res = i;
+            }
+        }
+        return res;
+    }
+
+
 }
