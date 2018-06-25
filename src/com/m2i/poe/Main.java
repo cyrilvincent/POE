@@ -17,7 +17,7 @@ public class Main {
     /**
      *
      * @param n
-     * @return true if n is prime toto
+     * @return trfgdfdgdfue if n is prime toto
      */
     public static boolean isPrime(int n) {
         boolean result = true;
