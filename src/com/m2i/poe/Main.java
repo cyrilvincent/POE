@@ -14,6 +14,11 @@ public class Main {
         }
     }
 
+    /**
+     *
+     * @param n
+     * @return true if n is prime
+     */
     public static boolean isPrime(int n) {
         boolean result = true;
         if(n < 2) {
