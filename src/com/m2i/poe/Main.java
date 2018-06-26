@@ -1,9 +1,34 @@
 package com.m2i.poe;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
         int[] tab = {3,2,1};
+        int[] tab2 = new int[10]; // Array
+        ArrayList<Integer> l = new ArrayList<Integer>(); // Collection
+        l.add(2);
+        l.add(4);
+        l.add(7);
+        l.add(8); // 2 4 7 8
+        l.remove(1); // 2 7 8
+        int elem = l.get(0); // 2
+        elem = l.get(2); // 8
+        int size = l.size(); // 3
+        l.add(9); // 2 7 8 9
+        l.add(2,0); // Insère 0 à l'indice 2 => 2 7 0 8 9
+        ArrayList<Integer> l2 = new ArrayList<>(Arrays.asList(2,4,7,8));
+
+        // TP
+        // Methodes qui font : sum, min, max , average, getPrimeNumbers
+        // TP moyen : inverse => 1,2,3,4 renvoie 4,3,2,1
+        // TP difficile : refaire inverse sans créer une nouvelle lite cad en détruisant la liste originielle
+
+
+
         System.out.println(isPrime(7));
         System.out.println(isPrime(6));
         System.out.println(isPrime(0));
