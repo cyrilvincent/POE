@@ -1,7 +1,6 @@
 package com.m2i.poe;
 
 public class Point {
-    //TP1 Recopier Point
 
     // QUOI ? WHY ? Class = DATA
     double x;
