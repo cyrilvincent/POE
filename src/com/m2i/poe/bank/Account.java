@@ -5,7 +5,7 @@ import java.util.Date;
 public class Account {
 
     String id;
-    double solde = 0;
+    public double solde = 0;
     boolean isActive = true;
     boolean isBlocked = false;
     Date creationDate = new Date();
