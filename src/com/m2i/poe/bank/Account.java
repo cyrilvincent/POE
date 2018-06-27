@@ -1,5 +1,6 @@
 package com.m2i.poe.bank;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Account {
@@ -9,6 +10,7 @@ public class Account {
     private boolean isActive = true;
     private boolean isBlocked = false;
     private Date creationDate = new Date();
+    private ArrayList<Transaction> transactionList = new ArrayList<>();
 
     public Account() {
     }
