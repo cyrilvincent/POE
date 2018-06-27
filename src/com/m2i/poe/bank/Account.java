@@ -10,26 +10,36 @@ public class Account {
     private boolean isActive = true;
     private boolean isBlocked = false;
     private Date creationDate = new Date();
+    private Customer customer;
     private ArrayList<Transaction> transactionList = new ArrayList<>();
 
     public Account() {
     }
 
-    public Account(int id) {
+    public Account(int id, Customer customer) {
         this.id = id;
+        this.customer = customer;
     }
 
 
     void deposit(double amount) {
-        if(isActive() && !isBlocked()) {
-            solde = getSolde() + amount;
+        if(isActive && !isBlocked) {
+            solde = solde + amount;
+            Transaction transaction = new Transaction(amount);
+            transaction.setFromAccount(null);
+            transaction.setToAccount(this);
+            transactionList.add(transaction);
         }
     }
 
     double withdraw(double amount) {
-        if(isActive() && !isBlocked()) {
-            if (amount <= getSolde()) {
-                solde = getSolde() - amount;
+        if(isActive && !isBlocked) {
+            if (amount <= solde) {
+                solde = solde - amount;
+                Transaction transaction = new Transaction(-amount);
+                transaction.setFromAccount(this);
+                transaction.setToAccount(null);
+                transactionList.add(transaction);
                 return amount;
             } else {
                 return 0;
@@ -40,15 +50,27 @@ public class Account {
         }
     }
 
-    void close() {
+    public void transfer(double amount, Account account) {
+        if(isActive && !isBlocked) {
+            if (amount <= solde) {
+                solde -= amount;
+                Transaction transaction = new Transaction(-amount);
+                transaction.setFromAccount(this);
+                transaction.setToAccount(account);
+                transactionList.add(transaction);
+            }
+        }
+    }
+
+    public void close() {
         isActive = false;
     }
 
-    void block() {
+    public void block() {
         isBlocked = true;
     }
 
-    void unblock() {
+    public void unblock() {
         isBlocked = false;
     }
 
@@ -75,5 +97,18 @@ public class Account {
 
     public String toString() {
         return "Account "+id+": "+solde+" €";
+    }
+
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public ArrayList<Transaction> getTransactionList() {
+        return transactionList;
     }
 }
