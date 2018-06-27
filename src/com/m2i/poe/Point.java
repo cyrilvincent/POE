@@ -50,7 +50,7 @@ public class Point {
     //}
 
     public String toString() {
-        return "("+ getX() +","+ getY() +")\n";
+        return "("+ getX() +","+ getY() +")";
     }
 
 }

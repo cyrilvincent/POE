@@ -4,6 +4,12 @@ import java.util.Date;
 
 public class Account {
 
+    // Passer les attributs en private
+    // Créer les getters setters
+    // Créer un constructeur sans paramètre (constructeur par défaut)
+    // Créer un constructeur avec les paramètres obligatoires
+    // Créer toString
+
     String id;
     public double solde = 0;
     boolean isActive = true;
