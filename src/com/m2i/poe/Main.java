@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -119,5 +120,58 @@ public class Main {
         return res;
     }
 
+    public int sum(ArrayList<Integer> l) {
+        int res = 0;
+        for(int i : l) {
+            res+=i;
+        }
+        return res;
+    }
 
+    public int max(ArrayList<Integer> l) {
+        int res = l.get(0);
+        for(int i=1;i<l.size();i++) {
+            if(l.get(i) > res) {
+                res = l.get(i);
+            }
+        }
+        return res;
+    }
+
+    public double average(ArrayList<Integer> l) {
+        return (double)sum(l)/l.size();
+    }
+
+    public static ArrayList<Integer> getPrimeNumbers(ArrayList<Integer> tab) {
+        ArrayList<Integer> result = new ArrayList<>();
+        for(int i : tab) {
+            if(isPrime(i)) {
+                result.add(i);
+            }
+        }
+        return result;
+    }
+
+    public static ArrayList<Integer> inverse(ArrayList<Integer> l) {
+        ArrayList<Integer> res = new ArrayList<>();
+        for(int i = l.size() - 1; i>=0; i--) {
+            int value = l.get(i);
+            res.add(value); // res.add(l.get(i))
+        }
+        return res;
+    }
+
+    public static ArrayList<Integer> permut(ArrayList<Integer> l, int index1, int index2) {
+        int temp = l.get(index1);
+        l.set(index1, l.get(index2));
+        l.set(index2, temp);
+        return l;
+    }
+
+    public static ArrayList<Integer> inverse2(ArrayList<Integer> l) {
+        for(int i =0; i < ((l.size() + 1 )/ 2); i++) {
+            l = permut(l,i, l.size() - 1 - i);
+        }
+        return l;
+    }
 }
