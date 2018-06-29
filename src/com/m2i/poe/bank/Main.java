@@ -24,5 +24,6 @@ public class Main {
             System.out.println(transaction);
         }
         a1.transfer(20, a2);
+        System.out.println(a1.getNbAccount());
     }
 }

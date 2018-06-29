@@ -1,4 +1,6 @@
-package com.m2i.poe;
+package com.m2i.poe.geometry;
+
+import com.m2i.poe.geometry.Point;
 
 public class Program {
 

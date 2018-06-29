@@ -12,13 +12,20 @@ public class Account {
     private Date creationDate = new Date();
     private Customer customer;
     private ArrayList<Transaction> transactionList = new ArrayList<>();
+    private static int nbAccount = 0;
 
     public Account() {
+        nbAccount++;
     }
 
     public Account(int id, Customer customer) {
         this.id = id;
         this.customer = customer;
+        nbAccount++;
+    }
+
+    public static int getNbAccount() {
+        return nbAccount;
     }
 
 
@@ -111,4 +118,6 @@ public class Account {
     public ArrayList<Transaction> getTransactionList() {
         return transactionList;
     }
+
+
 }

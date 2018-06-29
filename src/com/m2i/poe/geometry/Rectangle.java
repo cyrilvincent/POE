@@ -1,4 +1,4 @@
-package com.m2i.poe;
+package com.m2i.poe.geometry;
 
 public class Rectangle {
 
@@ -6,7 +6,10 @@ public class Rectangle {
     private double height;
     private Point origin = new Point(0,0); // Relation 1
 
-
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
 
 
     public double getWidth() {
@@ -31,5 +34,9 @@ public class Rectangle {
 
     public void setOrigin(Point origin) {
         this.origin = origin;
+    }
+
+    public double getSurface() {
+        return width * height;
     }
 }

@@ -1,4 +1,4 @@
-package com.m2i.poe;
+package com.m2i.poe.geometry;
 
 public class Point {
 
