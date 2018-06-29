@@ -10,7 +10,7 @@ public class Rectangle {
         this.width = width;
         this.height = height;
     }
-
+    public Rectangle() {}
 
     public double getWidth() {
         return width;
@@ -38,5 +38,9 @@ public class Rectangle {
 
     public double getSurface() {
         return width * height;
+    }
+
+    public double getPerimetre() {
+        return 2*(getWidth() + getHeight());
     }
 }
