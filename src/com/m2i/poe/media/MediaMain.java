@@ -9,6 +9,6 @@ public class MediaMain {
         System.out.println(m.getNetPrice());
         m.setPublisher(new Publisher(4,"Gaumont"));
         m.getAuthorList().add(new Author(5,"Silvester","Stallone"));
-
+        int zone = ((Dvd) m).getZone();
     }
 }
