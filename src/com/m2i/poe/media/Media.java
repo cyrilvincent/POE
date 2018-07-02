@@ -1,14 +1,15 @@
 package com.m2i.poe.media;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Media {
+public abstract class Media implements IMedia {
 
     private double price;
     private int id;
     private String title;
     private Publisher publisher;
-    private ArrayList<Author> authorList = new ArrayList<>();
+    private List<Author> authorList = new ArrayList<>();
 
     public Media() {}
 
@@ -18,47 +19,54 @@ public class Media {
         this.price = price;
     }
 
+    @Override
     public double getPrice() {
         return price;
     }
 
+    @Override
     public void setPrice(double price) {
         this.price = price;
     }
 
+    @Override
     public int getId() {
         return id;
     }
 
+    @Override
     public void setId(int id) {
         this.id = id;
     }
 
+    @Override
     public String getTitle() {
         return title;
     }
 
+    @Override
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public double getNetPrice() {
-        return price * 1.2;
-    }
-
+    @Override
     public Publisher getPublisher() {
         return publisher;
     }
 
+    @Override
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
     }
 
-    public ArrayList<Author> getAuthorList() {
+    @Override
+    public List<Author> getAuthorList() {
         return authorList;
     }
 
-    public void setAuthorList(ArrayList<Author> authorList) {
+    @Override
+    public void setAuthorList(List<Author> authorList) {
         this.authorList = authorList;
     }
+
 }

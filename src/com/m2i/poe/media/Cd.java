@@ -17,4 +17,9 @@ public class Cd extends  Media {
     public Cd(int id, String title, double price) {
         super(id,title,price);
     }
+
+    @Override
+    public double getNetPrice() {
+        return getPrice() * 1.2;
+    }
 }
