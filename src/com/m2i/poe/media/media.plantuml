@@ -38,14 +38,25 @@ title __MEDIA's Class Diagram__\n
   package com.m2i.poe {
     package com.m2i.poe.media {
       class Cart {
-          - mediaList : List<IMedia>
-          + getMediaList()
+          - mediaRowList : List<CartRow>
           + getTotalNetPrice()
-          + add()
-          + remove()
+          + add(Media m)
+          + remove(Media m)
       }
     }
   }
+
+  package com.m2i.poe {
+      package com.m2i.poe.media {
+        class CartRow {
+            - media : IMedia
+            - quantity : int
+            + getNetPrice()
+            + increment(Media m)
+            + decrement(Media m)
+        }
+      }
+    }
   
 
   package com.m2i.poe {
@@ -161,7 +172,8 @@ title __MEDIA's Class Diagram__\n
   Media -up-|> IMedia
   Media "*" o-- "1" Publisher : publisher
   Media "*" o-- "*" Author : authorList
-  Cart o--> "*" Media : mediaList
+  Cart o--> "*" CartRow : cartRowList
+  CartRow o--> "1" IMedia : media
   Media2 -up-|> IMedia
 
 
