@@ -35,15 +35,16 @@ public class Cart {
         for(CartRow row : cartRowList) {
             if(m == row.getMedia()) {
                 res = row;
+                break;
             }
         }
         return res;
     }
 
-    public void remove(IMedia m) {
+    public void remove(IMedia m) throws MediaException {
         CartRow row = isMediaInCart(m);
         if(row == null) {
-            System.out.println("Cart error");
+            throw new MediaException("Cart error");
         }
         else {
             if(row.getQuantity() > 1) {
@@ -52,6 +53,15 @@ public class Cart {
             else {
                 cartRowList.remove(row);
             }
+        }
+    }
+
+    public void validate() throws MediaException {
+        if(getTotalNetPrice() <= 0) {
+            throw new MediaException("Cart error");
+        }
+        else {
+            // TODO
         }
     }
 }

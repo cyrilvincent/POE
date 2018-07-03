@@ -11,9 +11,14 @@ public class MediaMain {
         m.setPublisher(new Publisher(4,"Gaumont"));
         m.getAuthorList().add(new Author(5,"Silvester","Stallone"));
         int zone = ((Dvd) m).getZone();
-        Cart cart = new Cart();
-        cart.add(b);
-        cart.add(b);
-        cart.add(m);
+        try {
+            Cart cart = new Cart();
+            cart.add(b);
+            cart.add(b);
+            cart.add(m);
+            cart.remove(m);
+        } catch (MediaException e) {
+            e.printStackTrace();
+        }
     }
 }

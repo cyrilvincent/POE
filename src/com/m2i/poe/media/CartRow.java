@@ -15,12 +15,12 @@ public class CartRow {
         quantity++;
     }
 
-    public void decrement() {
+    public void decrement() throws MediaException {
         if(quantity > 1) {
             quantity--;
         }
         else {
-            System.out.println("Quantity error");
+            throw new MediaException("Cart error");
         }
     }
 
