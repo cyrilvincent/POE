@@ -11,7 +11,7 @@ public class Main {
         DNA dna1 = new DNA("ATCG");
         System.out.println(dna1);
         System.out.println(dna1.getComplementary());
-        ARN arn = dna1.transcription();
+        RNA arn = dna1.transcription();
         System.out.println(arn);
         DNA dna2 = new DNA("GAAAGAGCG");
         arn = dna2.transcription(); // CUUUCUCGC

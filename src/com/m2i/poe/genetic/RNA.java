@@ -2,11 +2,11 @@ package com.m2i.poe.genetic;
 
 import java.util.ArrayList;
 
-public class ARN {
+public class RNA {
 
     private ArrayList<Base> strand = new ArrayList<>();
 
-    public ARN() {
+    public RNA() {
     }
 
     public String toString() {

@@ -35,8 +35,8 @@ public class DNA {
         return res;
     }
 
-    public ARN transcription() {
-        ARN arn = new ARN();
+    public RNA transcription() {
+        RNA arn = new RNA();
         for(Base b : strand) {
             arn.getStrand().add(b.getApparie(true));
         }
