@@ -12,11 +12,12 @@ public class Cart {
     }
 
     public double getTotalNetPrice() {
-        double res = 0;
-        for(CartRow row : cartRowList) {
-            res += row.getMedia().getNetPrice();
-        }
-        return res;
+//        double res = 0;
+//        for(CartRow row : cartRowList) {
+//            res += row.getMedia().getNetPrice();
+//        }
+//        return res;
+        return cartRowList.stream().mapToDouble(row -> row.getMedia().getNetPrice()).sum();
     }
 
     public void add(IMedia m) {
@@ -31,14 +32,15 @@ public class Cart {
     }
 
     private CartRow isMediaInCart(IMedia m) {
-        CartRow res = null;
-        for(CartRow row : cartRowList) {
-            if(m == row.getMedia()) {
-                res = row;
-                break;
-            }
-        }
-        return res;
+//        CartRow res = null;
+//        for(CartRow row : cartRowList) {
+//            if(m == row.getMedia()) {
+//                res = row;
+//                break;
+//            }
+//        }
+//        return res;
+        return cartRowList.stream().filter(row -> row.getMedia() == m).findFirst().orElse(null);
     }
 
     public void remove(IMedia m) throws MediaException {
