@@ -24,7 +24,10 @@ public class CSVSample {
             MesureRepository repo = new MesureRepository();
             repo.load("mesure.csv");
             System.out.println(repo.getMesureList());
-
+            System.out.println(repo.getDifferenceList());
+            System.out.println(repo.getQuadraticList());
+            System.out.println(repo.getTimeDifferenceErrorList(0.1));
+            System.out.println(repo.getTimeQuatraticErrorList(0.01));
         }
         catch(FileNotFoundException ex) {
             ex.printStackTrace();

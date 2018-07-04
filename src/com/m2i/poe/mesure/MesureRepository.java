@@ -27,6 +27,7 @@ public class MesureRepository implements IMesureRepository {
             mesureList.add(mesure);
             line = reader.readLine();
         }
+        reader.close();
     }
 
     @Override
@@ -41,21 +42,41 @@ public class MesureRepository implements IMesureRepository {
 
     @Override
     public List<Double> getDifferenceList() {
-        return null;
+        List<Double> res = new ArrayList<>();
+        for(int i = 0;i<mesureList.size();i++) {
+            double diff = mesureList.get(i) - theoricalList.get(i);
+            res.add(diff);
+        }
+        return res;
     }
 
     @Override
     public List<Double> getQuadraticList() {
-        return null;
+        List<Double> res = new ArrayList<>();
+        for(int i = 0;i<mesureList.size();i++) {
+            double diff = mesureList.get(i) - theoricalList.get(i);
+            res.add(Math.pow(diff,2));
+        }
+        return res;
     }
 
     @Override
     public List<Integer> getTimeDifferenceErrorList(double delta) {
-        return null;
+        return(getTimeDifferenceErrorList(delta, getDifferenceList()));
+    }
+
+    private List<Integer> getTimeDifferenceErrorList(double delta, List<Double> list) {
+        List<Integer> res = new ArrayList<>();
+        for(int i=0;i<list.size();i++) {
+            if(Math.abs(list.get(i)) >= delta) {
+                res.add(i);
+            }
+        }
+        return res;
     }
 
     @Override
     public List<Integer> getTimeQuatraticErrorList(double delta) {
-        return null;
+        return(getTimeDifferenceErrorList(delta, getQuadraticList()));
     }
 }
