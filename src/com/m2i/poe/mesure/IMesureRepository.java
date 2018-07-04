@@ -1,10 +1,12 @@
 package com.m2i.poe.mesure;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 public interface IMesureRepository {
 
-    void load(String uri);
+    void load(String uri) throws IOException;
     List<Double> getTheoricalList();
     List<Double> getMesureList();
     List<Double> getDifferenceList();
