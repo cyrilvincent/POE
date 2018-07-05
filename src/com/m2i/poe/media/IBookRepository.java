@@ -1,10 +1,12 @@
 package com.m2i.poe.media;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 public interface IBookRepository {
 
-    void load(String uri);
+    void load(String uri) throws IOException;
 
     List<Book> getAll();
     Book getById(int id);

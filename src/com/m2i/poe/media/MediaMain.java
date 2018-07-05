@@ -1,5 +1,7 @@
 package com.m2i.poe.media;
 
+import java.io.IOException;
+
 public class MediaMain {
 
     public static void main(String[] args) {
@@ -18,6 +20,16 @@ public class MediaMain {
             cart.add(m);
             cart.remove(m);
         } catch (MediaException e) {
+            e.printStackTrace();
+        }
+        BookRepository repo = new BookRepository();
+        try {
+            repo.load("books.csv");
+            System.out.println(repo.getAll());
+            System.out.println(repo.getByPrice(11));
+            System.out.println(repo.getByTitle("py"));
+            System.out.println(repo.getById(1));
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

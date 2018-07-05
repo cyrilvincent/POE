@@ -69,4 +69,8 @@ public abstract class Media implements IMedia {
         this.authorList = authorList;
     }
 
+    @Override
+    public String toString() {
+        return "Media "+id+": "+title+" "+getNetPrice()+"€";
+    }
 }
