@@ -22,7 +22,7 @@ title __GENETIC's Class Diagram__\n
   package com.m2i.poe {
       package com.m2i.poe.genetic {
         class Ribosome {
-            + translate(ARN arn) : List<AminoAcid>
+            + translate(ARN arn) : List<Protein>
         }
       }
     }
@@ -47,7 +47,6 @@ title __GENETIC's Class Diagram__\n
       package com.m2i.poe.genetic {
         class Protein {
             - chain : List<AminoAcid>
-            + {static} factory(aminoAcidList : List<AminoAcid>) : List<Protein>
         }
       }
     }
@@ -91,7 +90,7 @@ title __GENETIC's Class Diagram__\n
   DNA --> "1" RNA : transcription
   Protein o--> "*" AminoAcid : chain
   Ribosome --> "1" RNA
-  Ribosome --> "*" AminoAcid
+  Ribosome --> "*" Protein : translate
   DNA -up-|> Nucleotide
   RNA -up-|> Nucleotide
 
