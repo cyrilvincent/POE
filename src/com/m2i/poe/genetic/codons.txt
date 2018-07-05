@@ -1,3 +1,5 @@
+Map<String,String> codonMap = new HashMap<>();
+
 codonMap.put("UUU","F");
 codonMap.put("UUC","F");
 codonMap.put("UUA","L");
@@ -32,8 +34,8 @@ codonMap.put("GCA","A");
 codonMap.put("GCG","A");
 codonMap.put("UAU","Y");
 codonMap.put("UAC","Y");
-codonMap.put("UAA"," ");
-codonMap.put("UAG"," ");
+codonMap.put("UAA"," "); // STOP
+codonMap.put("UAG"," "); // STOP
 codonMap.put("CAU","H");
 codonMap.put("CAC","H");
 codonMap.put("CAA","Q");
@@ -48,7 +50,7 @@ codonMap.put("GAA","E");
 codonMap.put("GAG","E");
 codonMap.put("UGU","C");
 codonMap.put("UGC","C");
-codonMap.put("UGA"," ");
+codonMap.put("UGA"," "); // STOP
 codonMap.put("UGG","W");
 codonMap.put("CGU","R");
 codonMap.put("CGC","R");

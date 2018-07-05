@@ -1,43 +1,35 @@
 package com.m2i.poe.genetic;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class DNA {
-
-    private ArrayList<Base> strand = new ArrayList<>();
+public class DNA extends Nucleotide {
 
     public DNA() {
     }
 
-    public DNA(String code) {
-        for(char c : code.toCharArray()) {
-            Base b = new Base(String.valueOf(c));
-            if(c == 'U') {
-                System.out.println("U is forbidden in DNA");
-            }
-            strand.add(b);
+    public DNA(String code) throws GeneticException {
+        super(code);
+        if(code.contains("U")) {
+            throw new GeneticException("U is forbiden in DNA");
         }
     }
 
     public String toString() {
-        String res = "";
-        for(Base b : strand) {
-            res += b.getSymbol();
-        }
-        return res;
+        return "DNA: "+super.toString();
     }
 
-    public ArrayList<Base> getComplementary() {
+    public List<Base> getComplementary() {
         ArrayList<Base> res = new ArrayList<>();
-        for(Base b : strand) {
+        for(Base b : getStrand()) {
             res.add(b.getApparie(false));
         }
         return res;
     }
 
-    public RNA transcription() {
+    public RNA transcription() { // By RNA Polymerase
         RNA arn = new RNA();
-        for(Base b : strand) {
+        for(Base b : getStrand()) {
             arn.getStrand().add(b.getApparie(true));
         }
         return arn;

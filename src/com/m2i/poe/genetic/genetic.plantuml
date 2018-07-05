@@ -6,7 +6,7 @@ title __GENETIC's Class Diagram__\n
       package com.m2i.poe.genetic {
         class DNARepository {
             + load(String uri)
-            + getBaseList() : List<Base>
+            + getDNA() : DNA
         }
       }
     }
@@ -14,7 +14,6 @@ title __GENETIC's Class Diagram__\n
   package com.m2i.poe {
     package com.m2i.poe.genetic {
       class RNA {
-          - strand : List<Base>
           + RNA()
       }
     }
@@ -70,22 +69,31 @@ title __GENETIC's Class Diagram__\n
   package com.m2i.poe {
     package com.m2i.poe.genetic {
       class DNA {
-          - strand : List<Base>
           + DNA(String code)
-          + DNA()
           + getComplementary() : List<Base>
           + transcription() : RNA
       }
     }
   }
 
-  Base o--> "1" Base : apparie
+  package com.m2i.poe {
+      package com.m2i.poe.genetic {
+        class Nucleotide {
+            - strand : List<Base>
+            + Nucleotide(String code)
+            + Nucleotide()
+        }
+      }
+    }
+
+  Base --> "1" Base : apparie
   DNA o--> "*" Base : strand
-  DNA o--> "1" RNA : transcription
-  RNA o--> "*" AminoAcid : translation
+  DNA --> "1" RNA : transcription
   Protein o--> "*" AminoAcid : chain
-  Ribosome o--> "1" RNA
-  Ribosome o--> "*" AminoAcid
+  Ribosome --> "1" RNA
+  Ribosome --> "*" AminoAcid
+  DNA -up-|> Nucleotide
+  RNA -up-|> Nucleotide
 
 
 

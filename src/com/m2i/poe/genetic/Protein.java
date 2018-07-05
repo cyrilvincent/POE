@@ -5,35 +5,33 @@ import java.util.List;
 
 public class Protein {
 
-    private List<AminoAcid> peptide = new ArrayList<>();
+    private List<AminoAcid> chain = new ArrayList<>();
 
-    public List<AminoAcid> getPeptide() {
-        return peptide;
+    public List<AminoAcid> getChain() {
+        return chain;
     }
 
-    public void setPeptide(List<AminoAcid> peptide) {
-        this.peptide = peptide;
+    public Protein() {}
+
+    public Protein(List<AminoAcid> chain) {
+        this.chain = chain;
     }
 
-    public List<Protein> factory(List<AminoAcid> peptide) {
-        List<Protein> res = new ArrayList<>();
-        Protein p = new Protein();
-        for(AminoAcid aa : peptide) {
-            if(aa.getName().equals("STOP")) {
-                res.add(p);
-                p = new Protein();
-            }
-            else {
-                p.getPeptide().add(aa);
-            }
-        }
-        return res;
+    public void setChain(List<AminoAcid> chain) {
+        this.chain = chain;
+    }
+
+    public boolean isProtein() {
+        return chain.size() > 50;
     }
 
     @Override
     public String toString() {
-        String s = "";
-        for(AminoAcid aa : peptide) {
+        String s = "Peptide: ";
+        if(isProtein()) {
+            s = "Protein: ";
+        }
+        for(AminoAcid aa : chain) {
             s+=aa.getSymbol();
         }
         return s;

@@ -18,7 +18,7 @@ public class Base {
         return familly;
     }
 
-    public Base(String symbol) {
+    public Base(String symbol) throws GeneticException {
         this.symbol = symbol;
         if(symbol.equals("A")) {
             name = "Adenine";
@@ -41,37 +41,35 @@ public class Base {
             familly = "Pyrimidine";
         }
         else {
-            System.err.println("Base error "+symbol);
+            throw new GeneticException("Unknow base "+symbol);
         }
 
     }
 
     public Base getApparie(boolean isArn) {
-        if(symbol.equals("A")) {
-            if(isArn) {
-                return new Base("U");
+        Base b = null;
+        try {
+            if (symbol.equals("A")) {
+                if (isArn) {
+                    b = new Base("U");
+                } else {
+                    b = new Base("T");
+                }
+            } else if (symbol.equals("T")) {
+                b = new Base("A");
+            } else if (symbol.equals("C")) {
+                b = new Base("G");
+            } else if (symbol.equals("G")) {
+                b = new Base("C");
+            } else if (symbol.equals("U")) {
+                b = new Base("A");
             }
-            else {
-                return new Base("T");
-            }
         }
-        else if(symbol.equals("T")) {
-            return new Base("A");
-        }
-        else if(symbol.equals("C")) {
-            return new Base("G");
-        }
-        else if(symbol.equals("G")) {
-            return new Base("C");
-        }
-        else if(symbol.equals("U")) {
-            return new Base("A");
-        }
-        else {
-            return null;
-        }
+        catch (GeneticException ex) {}
+        return b;
     }
 
+    @Override
     public String toString() {
         return symbol;
     }

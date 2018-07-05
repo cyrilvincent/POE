@@ -6,7 +6,7 @@ public class AminoAcid {
     private String trigram;
     private String name;
 
-    public AminoAcid(String symbol) {
+    public AminoAcid(String symbol) throws GeneticException {
         this.symbol = symbol;
         if(symbol.equals("R")) {
             trigram = "Arg";
@@ -97,7 +97,7 @@ public class AminoAcid {
             name = "Glycine";
         }
         else {
-            System.err.println("AminoAcid error");
+            throw new GeneticException("Unknow AminoAcid "+symbol);
         }
     }
 
@@ -113,6 +113,7 @@ public class AminoAcid {
         return name;
     }
 
+    @Override
     public String toString() {
         return symbol;
     }
