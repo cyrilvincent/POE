@@ -3,14 +3,30 @@
 title __GENETIC's Class Diagram__\n
 
   package com.m2i.poe {
+      package com.m2i.poe.genetic {
+        class DNARepository {
+            + load(String uri)
+            + getBaseList() : List<Base>
+        }
+      }
+    }
+
+  package com.m2i.poe {
     package com.m2i.poe.genetic {
       class RNA {
           - strand : List<Base>
           + RNA()
-          + translate() : List<AminoAcid>
       }
     }
   }
+
+  package com.m2i.poe {
+      package com.m2i.poe.genetic {
+        class Ribosome {
+            + translate(ARN arn) : List<AminoAcid>
+        }
+      }
+    }
   
 
   package com.m2i.poe {
@@ -27,6 +43,15 @@ title __GENETIC's Class Diagram__\n
       }
     }
   }
+
+  package com.m2i.poe {
+      package com.m2i.poe.genetic {
+        class Protein {
+            - chain : List<AminoAcid>
+            + {static} factory(aminoAcidList : List<AminoAcid>) : List<Protein>
+        }
+      }
+    }
   
 
   package com.m2i.poe {
@@ -58,6 +83,9 @@ title __GENETIC's Class Diagram__\n
   DNA o--> "*" Base : strand
   DNA o--> "1" RNA : transcription
   RNA o--> "*" AminoAcid : translation
+  Protein o--> "*" AminoAcid : chain
+  Ribosome o--> "1" RNA
+  Ribosome o--> "*" AminoAcid
 
 
 
