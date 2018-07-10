@@ -15,10 +15,9 @@ public class BookSqlRepository implements IBookRepository {
         connection = DriverManager.getConnection(uri,"postgres","admin");
     }
 
-    @Override
-    public List<Book> getAll() throws SQLException {
+    private List<Book> getBySql(String sql) throws SQLException {
         Statement st = connection.createStatement();
-        ResultSet rs = st.executeQuery("select * from book");
+        ResultSet rs = st.executeQuery(sql);
         List<Book> res = new ArrayList<>();
         while(rs.next()) {
             int id = rs.getInt("id");
@@ -31,37 +30,48 @@ public class BookSqlRepository implements IBookRepository {
     }
 
     @Override
-    public Book getById(int id) {
-        return null;
+    public List<Book> getAll() throws SQLException {
+        return getBySql("select * from book");
     }
 
     @Override
-    public List<Book> getByTitle(String title) {
-        return null;
+    public Book getById(int id) throws SQLException {
+        List<Book> l = getBySql("select * from book where id ="+id);
+        return l.get(0);
     }
 
     @Override
-    public List<Book> getByPrice(double price) {
-        return null;
+    public List<Book> getByTitle(String title) throws SQLException {
+        return getBySql("select * from book where title ilike '%"+title+"%'");
     }
 
     @Override
-    public List<Book> getByPublisher(String publisherName) {
-        return null;
+    public List<Book> getByPrice(double price) throws SQLException {
+        return getBySql("select * from book where price <= "+price);
     }
 
     @Override
-    public void add(Book b) {
-
+    public List<Book> getByPublisher(String publisherName) throws SQLException {
+        return getBySql("select * from book, publisher where book.publisherid = publisher.id and publisher.name ilike '%"+publisherName+"%'");
     }
 
     @Override
-    public void remove(Book b) {
-
+    public void add(Book b) throws SQLException {
+        String sql ="insert into book (title, price) values ('"+b.getTitle()+"',"+b.getPrice()+")";
+        Statement st = connection.createStatement();
+        st.execute(sql);
     }
 
     @Override
-    public void update(Book b) {
+    public void remove(Book b) throws SQLException {
+        Statement st = connection.createStatement();
+        st.execute("delete from book where id="+b.getId());
+    }
 
+    @Override
+    public void update(Book b) throws SQLException {
+        String sql ="update book set title = '"+b.getTitle()+"', price ="+b.getPrice()+" where id="+b.getId();
+        Statement st = connection.createStatement();
+        st.execute(sql);
     }
 }
