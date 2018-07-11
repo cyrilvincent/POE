@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header inline-block">
+                <a href="#/phones" class="navbar-brand">
+                    <div class="hidden-xs"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/695px-AngularJS_logo.svg.png" width="100" /> Google Phonecat by Cyril Vincent</div>
+                    <div class="hidden-sm hidden-md hidden-lg">Google Phonecat</div>
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/phones">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="http://www.cyrilvincent.com">CVC</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <div class="view-container">
+        <div class="view-frame">
+		
+		<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                Search: <input ng-model="c.query" class="ng-pristine ng-untouched ng-valid ng-empty">
+                Sort by:
+                <select ng-model="c.orderProp" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                    <option value="name">Alphabetical</option>
+                    <option value="age">Newest</option>
+                </select>
+            </div>
+            <div class="col-md-10">
+                <ul class="phones">
+                    <li ng-repeat="phone in c.phones | filter:c.query | orderBy:c.orderProp" class="thumbnail phone-listing ng-scope">
+                       <a href="phone.html" class="thumb"><img ng-src="img/phones/motorola-xoom-with-wi-fi.0.jpg" src="img/phones/motorola-xoom-with-wi-fi.0.jpg"></a>
+						<p><a href="#/phone/motorola-xoom-with-wi-fi" class="ng-binding">Motorola XOOM™ with Wi-Fi</a></p>
+						<p class="ng-binding">The Next, Next Generation
+
+						Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
+
+					</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+		
+		
+		</div>
+    </div>
+</body>
+</html>
