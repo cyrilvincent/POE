@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JS</title>
-    <script lang="JavaScript" src="js/mylibrary.js"/>
+    <script src="js/mylibrary.js"></script>
     <script language="JavaScript">
         var red = true;
         function hello() {
@@ -15,6 +15,12 @@
                 document.bgColor='red';
                 red=true;
             }
+        }
+
+        function manageForm() {
+            var title = document.forms["myForm"].elements["titleBox"].value;
+            var title = document.forms["myForm"].elements["priceBox"].value;
+            alert(title + " " + price);
         }
     </script>
 </head>
@@ -45,8 +51,16 @@ Hello Javascript!<br/>
     display(res);
 </script>
 
+<input type="text" onclick="document.bgColor = 'black'" onmouseover="document.bgColor = 'green'" onmouseout="document.bgColor = 'blue'" onfocus="document.bgColor = 'yellow'"/>
+<br/>
+<br/>
+<br/>
+<form name="myForm">
+    Title : <input type="text" name="titleBox"><br/>
+    Price : <input type="text" name="priceBox"/><br/>
+    <input type="button" value="OK" name="okButton" onclick="manageForm()"/>
 
-
+</form>
 
 </body>
 </html>
