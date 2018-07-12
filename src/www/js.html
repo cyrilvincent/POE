@@ -33,6 +33,16 @@ Hello Javascript!<br/>
     document.write(isPrime(7)+"<br/>");
     document.write(isPrime(8)+"<br/>");
     display(getPrimeNumbers(tab));
+
+    var res = tab.filter(i => i % 2 == 0);
+    display(res);
+    res = tab.map(i => i + 1);
+    display(res);
+    var reduc = res.reduce((a,b)=>a+b,0);
+    document.write(reduc + "<br/>");
+
+    res = tab.filter(i => isPrime(i));
+    display(res);
 </script>
 
 
