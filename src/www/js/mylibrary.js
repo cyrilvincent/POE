@@ -31,10 +31,23 @@ function avg(tab) {
     return sum(tab)/tab.length;
 }
 
-function isPrimeNumber(i) {
-
+function isPrime(i) {
+    var res = true;
+    for(var j=2;j<i;j++) {
+        if(i%j == 0) {
+            res = false;
+            break;
+        }
+    }
+    return res;
 }
 
-function getPrimeNumbers(tab) { // => retourne un tableau de nombre premiers
-    // tab.push <=> tab.add de Java
+function getPrimeNumbers(tab) {
+    var res = new Array();
+    for(var i=0;i<tab.length;i++) {
+        if(isPrime(tab[i])) {
+            res.push(tab[i]);
+        }
+    }
+    return res;
 }
