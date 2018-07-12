@@ -19,7 +19,7 @@
 
         function manageForm() {
             var title = document.forms["myForm"].elements["titleBox"].value;
-            var title = document.forms["myForm"].elements["priceBox"].value;
+            var price = document.forms["myForm"].elements["priceBox"].value;
             alert(title + " " + price);
         }
 
@@ -27,11 +27,17 @@
             var title = document.forms["myForm"].elements["titleBox"].value;
             if(title.length == 0) {
                 alert("Titre vide impossible");
+            } 
+        }
+
+        function checkPrice() {
+            var price = document.forms["myForm"].elements["priceBox"].value;
+            if(price.length == 0) {
+                alert("Prix obligatoire");
             }
-            // var toto = 123
-            // var titi = "12ab"
-            // isNan(toto) // false
-            // isNan(titi) // true
+            else if(isNaN(price)) {
+                alert("Prix du mauvais format");
+            }
         }
     </script>
 </head>
@@ -68,7 +74,7 @@ Hello Javascript!<br/>
 <br/>
 <form name="myForm">
     Title : <input type="text" name="titleBox" onblur="checkTitle()">*<br/>
-    Price : <input type="text" name="priceBox"/><br/> 
+    Price : <input type="text" name="priceBox" onblur="checkPrice()"/>*<br/> 
     <input type="button" value="OK" name="okButton" onclick="manageForm()"/>
 
 </form>
