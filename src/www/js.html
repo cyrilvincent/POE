@@ -22,6 +22,17 @@
             var title = document.forms["myForm"].elements["priceBox"].value;
             alert(title + " " + price);
         }
+
+        function checkTitle() {
+            var title = document.forms["myForm"].elements["titleBox"].value;
+            if(title.length == 0) {
+                alert("Titre vide impossible");
+            }
+            // var toto = 123
+            // var titi = "12ab"
+            // isNan(toto) // false
+            // isNan(titi) // true
+        }
     </script>
 </head>
 <body>
@@ -56,8 +67,8 @@ Hello Javascript!<br/>
 <br/>
 <br/>
 <form name="myForm">
-    Title : <input type="text" name="titleBox"><br/>
-    Price : <input type="text" name="priceBox"/><br/>
+    Title : <input type="text" name="titleBox" onblur="checkTitle()">*<br/>
+    Price : <input type="text" name="priceBox"/><br/> 
     <input type="button" value="OK" name="okButton" onclick="manageForm()"/>
 
 </form>
