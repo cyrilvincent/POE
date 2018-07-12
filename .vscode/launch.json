@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch file",
+			"type": "chrome",
+			"request": "launch",
+			"file": "${workspaceRoot}/src/www/js.html",
+		},
+		
+	]
+}
