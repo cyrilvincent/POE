@@ -1,65 +1,218 @@
-﻿<!DOCTYPE html>
-<html >
-<head>
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header inline-block">
-                <a href="#/phones" class="navbar-brand">
-                    <div class="hidden-xs"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/695px-AngularJS_logo.svg.png" width="100" /> Google Phonecat by Cyril Vincent</div>
-                    <div class="hidden-sm hidden-md hidden-lg">Google Phonecat</div>
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#/phones">Home</a></li>
-                    <li><a href="#/about">About</a></li>
-                    <li><a href="http://www.cyrilvincent.com">CVC</a></li>
-                </ul>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cyril Vincent Conseil</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Cyril Vincent Conseil</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Acceuil</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#prestations">Prestations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" id="cvlink" href="#cv">CV</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="">
+          <h1 class="mb-0">Cyril Vincent
+            <span class="text-primary">Conseil</span>
+          </h1>
+          <div class="subheading mb-5">Architecte des Systèmes d'Informations
+          </div>
+		  <h3 class="mb-0">Architecte consultant .NET, Python, Java, Data Scientist</h3>
+          <div class="subheading mb-3">Formateur Python, .NET, Java pour ATP Formation et M2I Formation - 20 ans d'expérience - Freelance</div>
+		  <p class="mb-5">Architecte et consultant .NET, Java, Python et Android sur de nombreux projets de grandes ampleurs.<br/>
+Ingénieur en Intelligence Artificelle - Data Scientist, Expert en Machine Learning Python.<br/>
+Auteur de "XML et les services Web" aux éditions ENI.<br/> 
+Formateur expérimenté.<br/>
+De nombreuses références comme Banque Populaire, Veolia, HP, Schneider Electric, Learning Tree, ICTA, ... <br/>
+		  Basé sur Grenoble et Rhône-Alpes</p>
         </div>
-    </div>
-    <br /><br />
-    <div class="view-container">
-        <div class="view-frame">
-		
-		<div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                Search: <input ng-model="c.query" class="ng-pristine ng-untouched ng-valid ng-empty">
-                Sort by:
-                <select ng-model="c.orderProp" class="ng-pristine ng-untouched ng-valid ng-not-empty">
-                    <option value="name">Alphabetical</option>
-                    <option value="age">Newest</option>
-                </select>
-            </div>
-            <div class="col-md-10">
-                <ul class="phones">
-                    <li ng-repeat="phone in c.phones | filter:c.query | orderBy:c.orderProp" class="thumbnail phone-listing ng-scope">
-                       <a href="phone.html" class="thumb"><img ng-src="img/phones/motorola-xoom-with-wi-fi.0.jpg" src="img/phones/motorola-xoom-with-wi-fi.0.jpg"></a>
-						<p><a href="#/phone/motorola-xoom-with-wi-fi" class="ng-binding">Motorola XOOM™ with Wi-Fi</a></p>
-						<p class="ng-binding">The Next, Next Generation
-
-						Experience the future with Motorola XOOM with Wi-Fi, the world's first tablet powered by Android 3.0 (Honeycomb).</p>
-
-					</li>
-                </ul>
-            </div>
+      </section>
+	  
+	  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="prestations">
+        <div class="my-auto">
+          <h2 class="mb-5">Prestations</h2>
+		  <h3 class="mb-0">Architecte consultant</h3>
+		  <p class="mb-5">Je mets à votre service toute mon expérience d'architecte pour vos projets, ainsi que ma fine connaissance des dernières technologies comme .NET, Python, Android, Java.<br/> 
+		  <h3 class="mb-0">Formateur</h3>
+		  <div class="mb-5">Ma grande expérience dans la formation vous assurerons une prestation de qualité. Voici quelques exemples de commentaires clients :
+			<ul class="mb-0">
+							<li>Fabrice S : <i>"Instructeur d’excellente qualité. A recommander pour comprendre facilement les concepts plutôt difficiles parfois. Un grand merci à lui."</i></li>
+							<li>Romain P : <i>"A l’écoute de ses interlocuteurs. Bonne pédagogie. Maîtrise des connaissances. Stage enrichissant."</i></li>
+							<li>Steeve I : <i>"Formateur ouvert et conviviale. Contenu conforme aux attentions."</i></li>
+						</ul>
+		  </div>
+            <h3 class="mb-0">Expertise confirmée</h3>
+            <p class="mb-5">Plus de 20 ans d'expérience en Java, Data Science et en Javascript, 15 ans en Python et C#, 10 ans en Android.</p>
+            <ul class="list-inline list-icons">
+                <li class="list-inline-item">
+                    <i class="devicon-csharp-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-java-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-python-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-angularjs-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-android-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-postgresql-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-typescript-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-mongodb-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-javascript-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-jquery-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-html5-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-css3-plain"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicon-bootstrap-plain"></i>
+                </li>
+            </ul>
         </div>
+      </section>
+	  
+	  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
+        <div class="my-auto">
+          <h2 class="mb-5">Contact</h2>
+		  <p class="mb-5">
+			<a href="mailto:contact@cyrilvincent.com">
+				<span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-mail fa-stack-1x fa-inverse"></i>
+                </span>contact@cyrilvincent.com
+			</a>
+		  </p>
+		  <p class="mb-5">
+			<a href="tel:0622538762">
+				<span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>0622538762
+			</a>
+		  </p>
+		  <p class="mb-5">970 Batiment B Avenue Leopold Fabre, 38250 Lans en Vercors<br/> SIRET : 43841898000035<br/>APE : 741G<br/>Membre d'une association agréée<br/>TVA Intracommunautaire : FR02 438 418 980<br/>TI URSSAF : 380 37005005279
+		  
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="mailto:contact@cyrilvincent.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-mail fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/cyril-vincent-3164a818/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="tel:0622538762">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/cyrilvincent">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="cv">
+            <div class="my-auto">
+                <h2 class="mb-5">CV</h2>
+                <div class="mb-3"><a href="cv.html">Version imprimable</a></div>
+		        <div class="cv" id="includedContent"></div>
+            </div>
+        </section>
+      
     </div>
-		
-		
-		</div>
-    </div>
-</body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.js"></script>
+
+
+  </body>
+
 </html>
