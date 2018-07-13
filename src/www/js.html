@@ -36,9 +36,56 @@
                 alert("Prix obligatoire");
             }
             else if(isNaN(price)) {
-                alert("Prix du mauvais format");
+                alert("Prix au mauvais format");
             }
         }
+
+        function changeDiv() {
+            var list = document.getElementsByTagName("div");
+            for(var i=0;i<list.length;i++) {
+                console.log(list[i].textContent);
+                list[i].textContent = "Hello"+i;
+            }
+        }
+
+        function changeWorldDiv() {
+            element = document.getElementById("worldId");
+            element.textContent = "World Champion";
+        }
+
+        function changeGroupDiv() {
+            element = document.getElementById("groupDiv");
+            list = element.getElementsByTagName("div");
+            for(var i=0;i<list.length;i++) {
+                console.log(list[i].textContent);
+                list[i].textContent = "Hello"+i;
+            }
+        }
+
+        function changeHello() {
+            element = document.getElementsByClassName("hello")[0];
+            element.style.fontSize = "30px";
+        }
+
+        var isVisible=true;
+        function toggleVisible() {
+            element = document.getElementsByClassName("hello")[0];
+            isVisible = !isVisible;
+            if(isVisible) {
+                element.style.visibility = "visible";
+            }
+            else {
+                element.style.visibility = "hidden";
+            }
+        }
+
+        var isEnabled=true;
+        function toggleEnabled() {
+            element = document.getElementById("myBtn");
+            isEnabled = !isEnabled;
+            element.style.disabled = true;
+        }
+
     </script>
 </head>
 <body>
@@ -76,8 +123,22 @@ Hello Javascript!<br/>
     Title : <input type="text" name="titleBox" onblur="checkTitle()">*<br/>
     Price : <input type="text" name="priceBox" onblur="checkPrice()"/>*<br/> 
     <input type="button" value="OK" name="okButton" onclick="manageForm()"/>
-
+    <div id="groupDiv">
+        <div class="hello">Hello</div>
+        <div id="worldId">World</div>
+    </div>
+    <div>Do not touch</div>
+    <input id="myBtn" type="button" value="ChangeDiv" onclick="changeDiv()"/>
+    <input type="button" value="ChangeWorld" onclick="changeWorldDiv()"/>
+    <input type="button" value="ChangeGroupDiv" onclick="changeGroupDiv()"/>
+    <input type="button" value="ChangeHello" onclick="changeHello()"/>
+    <input type="button" value="ToggleHello"  onclick="toggleVisible()"/>
+    <input type="button" value="ToggleEnabled"  onclick="toggleEnabled()"/>
 </form>
+
+<script>
+    
+</script>
 
 </body>
 </html>
