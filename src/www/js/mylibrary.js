@@ -1,8 +1,15 @@
 elem = document.getElementById("myBtn");
-elem.addEventListener("click", 
-    function() {
-        hello();
-    }
+elem.addEventListener("click", // <=> Ajouter un onclick
+        function () {
+            if(red) {
+                document.bgColor='blue';
+                red=false;
+            }
+            else {
+                document.bgColor='red';
+                red=true;
+            }
+        }
 );
 
 function circleArea(rayon) {
@@ -60,16 +67,16 @@ function getPrimeNumbers(tab) {
 }
 
 var red = true;
-        function hello() {
-            if(red) {
-                document.bgColor='blue';
-                red=false;
-            }
-            else {
-                document.bgColor='red';
-                red=true;
-            }
-        }
+var hello = function () {
+    if(red) {
+        document.bgColor='blue';
+        red=false;
+    }
+    else {
+        document.bgColor='red';
+        red=true;
+    }
+}
 
         function manageForm() {
             var title = document.forms["myForm"].elements["titleBox"].value;
