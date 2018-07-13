@@ -4,100 +4,7 @@
     <meta charset="UTF-8">
     <title>JS</title>
     <link href="css/js.css" rel="stylesheet">
-    <script src="js/mylibrary.js"></script>
-    <script language="JavaScript">
-        var red = true;
-        function hello() {
-            if(red) {
-                document.bgColor='blue';
-                red=false;
-            }
-            else {
-                document.bgColor='red';
-                red=true;
-            }
-        }
-
-        function manageForm() {
-            var title = document.forms["myForm"].elements["titleBox"].value;
-            var price = document.forms["myForm"].elements["priceBox"].value;
-            alert(title + " " + price);
-        }
-
-        function checkTitle() {
-            var title = document.forms["myForm"].elements["titleBox"].value;
-            if(title.length == 0) {
-                element = document.getElementById("titleError");
-                element.style.visibility = "visible";
-            }
-            else {
-                document.getElementById("titleError").style.visibility = "hidden";
-            }
-        }
-
-        function checkPrice() {
-            var price = document.forms["myForm"].elements["priceBox"].value;
-            if(price.length == 0) {
-                document.getElementById("priceError").style.visibility = "visible";
-            }
-            else {
-                document.getElementById("priceError").style.visibility = "hidden";
-            }
-            if(isNaN(price)) {
-                document.getElementById("priceFormatError").style.visibility = "visible";
-            }
-            else {
-                document.getElementById("priceFormatError").style.visibility = "hidden";
-            }
-        }
-
-        function changeDiv() {
-            var list = document.getElementsByTagName("div");
-            for(var i=0;i<list.length;i++) {
-                console.log(list[i].textContent);
-                list[i].textContent = "Hello"+i;
-            }
-        }
-
-        function changeWorldDiv() {
-            element = document.getElementById("worldId");
-            element.textContent = "World Champion";
-        }
-
-        function changeGroupDiv() {
-            element = document.getElementById("groupDiv");
-            list = element.getElementsByTagName("div");
-            for(var i=0;i<list.length;i++) {
-                console.log(list[i].textContent);
-                list[i].textContent = "Hello"+i;
-            }
-        }
-
-        function changeHello() {
-            element = document.getElementsByClassName("hello")[0];
-            element.style.fontSize = "30px";
-        }
-
-        var isVisible=true;
-        function toggleVisible() {
-            element = document.getElementsByClassName("hello")[0];
-            isVisible = !isVisible;
-            if(isVisible) {
-                element.style.visibility = "visible";
-            }
-            else {
-                element.style.visibility = "hidden";
-            }
-        }
-
-        var isEnabled=true;
-        function toggleEnabled() {
-            element = document.getElementById("myBtn");
-            isEnabled = !isEnabled;
-            element.style.disabled = true;
-        }
-
-    </script>
+    
 </head>
 <body>
 Hello Javascript!<br/>
@@ -146,7 +53,7 @@ Hello Javascript!<br/>
         <div id="worldId">World</div>
     </div>
     <div>Do not touch</div>
-    <input id="myBtn" type="button" value="ChangeDiv" onclick="changeDiv()"/>
+    <input id="myBtn" type="button" value="ChangeDiv"/>
     <input type="button" value="ChangeWorld" onclick="changeWorldDiv()"/>
     <input type="button" value="ChangeGroupDiv" onclick="changeGroupDiv()"/>
     <input type="button" value="ChangeHello" onclick="changeHello()"/>
@@ -154,9 +61,7 @@ Hello Javascript!<br/>
     <input type="button" value="ToggleEnabled"  onclick="toggleEnabled()"/>
 </form>
 
-<script>
-    
-</script>
+<script src="js/mylibrary.js"></script>
 
 </body>
 </html>
