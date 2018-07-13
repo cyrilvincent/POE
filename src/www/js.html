@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JS</title>
+    <link href="css/js.css" rel="stylesheet">
     <script src="js/mylibrary.js"></script>
     <script language="JavaScript">
         var red = true;
@@ -26,17 +27,27 @@
         function checkTitle() {
             var title = document.forms["myForm"].elements["titleBox"].value;
             if(title.length == 0) {
-                alert("Titre vide impossible");
-            } 
+                element = document.getElementById("titleError");
+                element.style.visibility = "visible";
+            }
+            else {
+                document.getElementById("titleError").style.visibility = "hidden";
+            }
         }
 
         function checkPrice() {
             var price = document.forms["myForm"].elements["priceBox"].value;
             if(price.length == 0) {
-                alert("Prix obligatoire");
+                document.getElementById("priceError").style.visibility = "visible";
             }
-            else if(isNaN(price)) {
-                alert("Prix au mauvais format");
+            else {
+                document.getElementById("priceError").style.visibility = "hidden";
+            }
+            if(isNaN(price)) {
+                document.getElementById("priceFormatError").style.visibility = "visible";
+            }
+            else {
+                document.getElementById("priceFormatError").style.visibility = "hidden";
             }
         }
 
@@ -120,8 +131,15 @@ Hello Javascript!<br/>
 <br/>
 <br/>
 <form name="myForm">
-    Title : <input type="text" name="titleBox" onblur="checkTitle()">*<br/>
-    Price : <input type="text" name="priceBox" onblur="checkPrice()"/>*<br/> 
+    Title : <input type="text" name="titleBox" onblur="checkTitle()">*
+        <span id="titleError">Title obligatoire</span>
+    <br/>
+    Price : <input type="text" name="priceBox" onblur="checkPrice()"/>*
+    <span id="container">
+        <span id="priceError">Prix obligatoire</span>
+        <span id="priceFormatError">Le prix doit être un numérique</span>
+    </span>
+    <br/> 
     <input type="button" value="OK" name="okButton" onclick="manageForm()"/>
     <div id="groupDiv">
         <div class="hello">Hello</div>
