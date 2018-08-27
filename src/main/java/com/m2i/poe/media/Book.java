@@ -1,7 +1,14 @@
 package com.m2i.poe.media;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Entity
+@Table(name="book")
 public class Book extends Media {
 
+    @Transient
     private int nbPage;
 
     public int getNbPage() {

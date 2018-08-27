@@ -16,8 +16,16 @@
     <properties>
         <jersey2.version>2.27</jersey2.version>
         <jaxrs.version>2.1</jaxrs.version>
+
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901-1.jdbc4</version>
+        </dependency>
+
         <!-- JAX-RS -->
         <dependency>
             <groupId>javax.ws.rs</groupId>
@@ -80,6 +88,16 @@
             <artifactId>javax.activation-api</artifactId>
             <version>1.2.0</version>
         </dependency>
+
+        <!-- JPA - Hibernate -->
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.6.Final</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <finalName>FormationRest</finalName>

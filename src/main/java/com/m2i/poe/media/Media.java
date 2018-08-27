@@ -1,14 +1,23 @@
 package com.m2i.poe.media;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@MappedSuperclass
 public abstract class Media implements IMedia {
 
     private double price;
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String title;
+
+    @Transient
     private Publisher publisher;
+
+    @Transient
     private List<Author> authorList = new ArrayList<>();
 
     public Media() {}
