@@ -2,79 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b42.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_hk2_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_27.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_CR2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_7_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_moxy_2_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_moxy_2_27.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CSVSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CSVSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FunctionalMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FunctionalMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JDBCSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JDBCSample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/AminoAcid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/AminoAcid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNARepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNARepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/GeneticException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/GeneticException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Nucleotide.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Nucleotide.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Protein.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/RNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/RNA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Ribosome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Ribosome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Carre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Carre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point3d.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point3d.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/TriangleRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/TriangleRectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookSqlRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookSqlRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/CartRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/CartRow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Dvd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Dvd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IBookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IBookRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IMedia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Publisher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/IMesureRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/IMesureRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/MesureRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/MesureRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,15 +29,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1675">
               <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resume.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/js/resume.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -123,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="194">
+              <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -153,16 +81,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloWorldRest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloWorldRest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="9" column="8" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="173">
+              <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#163#164#0" expanded="true" />
                 <element signature="e#200#201#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/media/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookSqlRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/media/BookSqlRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="59" column="78" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -254,9 +200,9 @@
         <option value="$PROJECT_DIR$/src/www/js.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/JaxRsActivator.java" />
         <option value="$PROJECT_DIR$/src/main/java/JerseyResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java" />
         <option value="$PROJECT_DIR$/src/www/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java" />
       </list>
     </option>
   </component>
@@ -321,6 +267,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="poe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poe" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -783,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531382202461</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="JAX-RS PlainText">
+      <created>1535374689687</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1535374689687</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,10 +758,10 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021962" side_tool="true" visible="true" weight="0.33070865" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5021962" side_tool="true" visible="true" weight="0.29291338" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.23792094" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.0" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.33070865" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978038" visible="true" weight="0.29291338" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -889,7 +851,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="CartRow todo" />
     <MESSAGE value="CartRow" />
     <MESSAGE value="MediaException" />
     <MESSAGE value="Function &amp; Lambda" />
@@ -914,7 +875,8 @@
     <MESSAGE value="CSS" />
     <MESSAGE value="Bootstrap" />
     <MESSAGE value="JS PPT" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS PPT" />
+    <MESSAGE value="JAX-RS PlainText" />
+    <option name="LAST_COMMIT_MESSAGE" value="JAX-RS PlainText" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,13 +941,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/CSVSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/mesure/MesureRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1155,13 +1110,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/media/BookSqlRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="59" column="78" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/cv.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1281,22 +1229,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/media/BookSqlRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="122">
+          <caret line="59" column="78" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/media/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/m2i/poe/rest/HelloWorldRest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="9" column="8" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="173">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#163#164#0" expanded="true" />
             <element signature="e#200#201#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
