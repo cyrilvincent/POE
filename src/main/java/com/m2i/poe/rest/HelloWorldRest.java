@@ -4,6 +4,7 @@ import com.m2i.poe.media.Book;
 import com.m2i.poe.media.EntityManagerFactorySingleton;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.ws.rs.core.*;
 
 import javax.ws.rs.*;
@@ -56,11 +57,69 @@ public class HelloWorldRest {
     }
 
     @GET
+    @Path("/book")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Book> getBook() {
+        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
+        List<Book> l = em.createQuery("select b from Book b").getResultList();
+        return l;
+    }
+
+    @GET
     @Path("/book/title/{title}")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Book> getBook(@PathParam("title") String title) {
         EntityManager em = EntityManagerFactorySingleton.getEntityManager();
         List<Book> l = em.createQuery("select b from Book b where upper(b.title) like '%"+ title.toUpperCase() + "%'").getResultList();
         return l;
+    }
+
+    @PUT
+    @Path("/book")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Book putBook(Book b) {
+        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
+        EntityTransaction t = em.getTransaction();
+        t.begin();
+        em.persist(b);
+        t.commit();
+        return b;
+    }
+
+    @POST
+    @Path("/book")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response postBook(Book b) {
+        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
+        EntityTransaction t = em.getTransaction();
+        Book book = em.find(Book.class,b.getId());
+        if (book == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        else {
+            em.merge(b);
+        }
+        em.persist(b);
+        t.commit();
+        return Response.ok().build();
+    }
+
+    @DELETE
+    @Path("/book/{id}")
+    public Response deleteBook(@PathParam("id") int id) {
+        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
+        EntityTransaction t = em.getTransaction();
+        t.begin();
+        Book b = em.find(Book.class,id);
+        if (b == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+        else {
+            em.remove(b);
+        }
+        em.persist(b);
+        t.commit();
+        return Response.ok().build();
     }
 }
