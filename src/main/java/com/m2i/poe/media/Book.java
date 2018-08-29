@@ -1,8 +1,6 @@
 package com.m2i.poe.media;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
 @Entity
 @Table(name="book")

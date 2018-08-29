@@ -93,6 +93,7 @@ public class HelloWorldRest {
     public Response postBook(Book b) {
         EntityManager em = EntityManagerFactorySingleton.getEntityManager();
         EntityTransaction t = em.getTransaction();
+        t.begin();
         Book book = em.find(Book.class,b.getId());
         if (book == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
@@ -118,7 +119,6 @@ public class HelloWorldRest {
         else {
             em.remove(b);
         }
-        em.persist(b);
         t.commit();
         return Response.ok().build();
     }
