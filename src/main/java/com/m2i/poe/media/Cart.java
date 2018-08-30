@@ -66,4 +66,14 @@ public class Cart {
             // TODO
         }
     }
+
+    private boolean isValid = false;
+
+    public boolean getIsValid() {
+        return isValid;
+    }
+
+    public void setIsValid(boolean isValid) {
+        this.isValid = isValid;
+    }
 }
