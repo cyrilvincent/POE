@@ -1,6 +1,7 @@
 package com.m2i.poe.rest;
 
 import com.m2i.poe.media.Book;
+import com.m2i.poe.media.BookJPARepository;
 import com.m2i.poe.media.EntityManagerFactorySingleton;
 
 import javax.persistence.EntityManager;
@@ -8,10 +9,13 @@ import javax.persistence.EntityTransaction;
 import javax.ws.rs.core.*;
 
 import javax.ws.rs.*;
+import java.sql.SQLException;
 import java.util.List;
 
 @Path("/hello")
 public class HelloWorldRest {
+
+    private BookJPARepository repo = new BookJPARepository();
 
     @GET
     @Path("/world")
@@ -41,85 +45,60 @@ public class HelloWorldRest {
     @GET
     @Path("/book/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Book getBook(@PathParam("id") int id) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        Book b = em.find(Book.class,id);
-        return b;
+    public Book getBook(@PathParam("id") int id) throws SQLException {
+        return repo.getById(id);
     }
 
     @GET
     @Path("/book/price/{price}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Book> getBook(@PathParam("price") double price) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        List<Book> l = em.createQuery("select b from Book b where b.price <= "+ price).getResultList();
-        return l;
+    public List<Book> getBook(@PathParam("price") double price) throws SQLException {
+        return repo.getByPrice(price);
     }
 
     @GET
     @Path("/book")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Book> getBook() {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        List<Book> l = em.createQuery("select b from Book b").getResultList();
-        return l;
+    public List<Book> getBook() throws SQLException {
+        return repo.getAll();
     }
 
     @GET
     @Path("/book/title/{title}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Book> getBook(@PathParam("title") String title) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        List<Book> l = em.createQuery("select b from Book b where upper(b.title) like '%"+ title.toUpperCase() + "%'").getResultList();
-        return l;
+    public List<Book> getBook(@PathParam("title") String title) throws SQLException {
+        return repo.getByTitle(title);
     }
 
     @PUT
     @Path("/book")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Book putBook(Book b) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        EntityTransaction t = em.getTransaction();
-        t.begin();
-        em.persist(b);
-        t.commit();
+    public Book putBook(Book b) throws SQLException {
+        repo.add(b);
         return b;
     }
 
     @POST
     @Path("/book")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response postBook(Book b) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        EntityTransaction t = em.getTransaction();
-        t.begin();
-        Book book = em.find(Book.class,b.getId());
+    public Response postBook(Book b) throws SQLException {
+        Book book = repo.getById(b.getId());
         if (book == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
-        else {
-            em.merge(b);
-        }
-        em.persist(b);
-        t.commit();
+        repo.update(b);
         return Response.ok().build();
     }
 
     @DELETE
     @Path("/book/{id}")
-    public Response deleteBook(@PathParam("id") int id) {
-        EntityManager em = EntityManagerFactorySingleton.getEntityManager();
-        EntityTransaction t = em.getTransaction();
-        t.begin();
-        Book b = em.find(Book.class,id);
-        if (b == null) {
+    public Response deleteBook(@PathParam("id") int id) throws SQLException {
+        Book book = repo.getById(id);
+        if (book == null) {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
-        else {
-            em.remove(b);
-        }
-        t.commit();
+        repo.remove(book);
         return Response.ok().build();
     }
 }
