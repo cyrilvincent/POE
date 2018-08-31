@@ -31,6 +31,12 @@ public class Protein {
         if(isProtein()) {
             s = "Protein: ";
         }
+        s+=toRawString();
+        return s;
+    }
+
+    public String toRawString() {
+        String s = "";
         for(AminoAcid aa : chain) {
             s+=aa.getSymbol();
         }

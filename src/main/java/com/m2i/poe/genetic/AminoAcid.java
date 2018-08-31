@@ -6,6 +6,8 @@ public class AminoAcid {
     private String trigram;
     private String name;
 
+    public AminoAcid() {}
+
     public AminoAcid(String symbol) throws GeneticException {
         this.symbol = symbol;
         if(symbol.equals("R")) {

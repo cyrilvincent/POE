@@ -22,6 +22,10 @@ public abstract class Nucleotide {
 
     @Override
     public String toString() {
+        return toRawString();
+    }
+
+    public String toRawString() {
         String res = "";
         for(Base b : getStrand()) {
             res += b.getSymbol();
