@@ -22,6 +22,7 @@ public class GeneticRest {
     @GET
     @Path("/dna/rna/{s}")
     @Produces(MediaType.TEXT_PLAIN)
+    // Limit: 2048 characters
     public String getRNA(@PathParam("s")String s) throws GeneticException {
         DNA dna = new DNA(s);
         RNA rna = dna.transcription();
