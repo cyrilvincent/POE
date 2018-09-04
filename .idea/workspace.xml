@@ -2,17 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular01-Intro.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular02-Install.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular03-FirstComponent.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular04-Components.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular05-Filters.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular06-Binding.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular07-TS.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular08-TSOO.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/6/Angular09-Tests.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/mock-heroes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/ts/bankaccount.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/ts/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/ts/unittests.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppt/angular/Angular07-TS.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/ppt/angular/Angular07-TS.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/ts/hello.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/ts/hello.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CSVSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CSVSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FunctionalMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FunctionalMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JDBCSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JDBCSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/bank/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/AminoAcid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/AminoAcid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNARepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/DNARepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/GeneticException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/GeneticException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Nucleotide.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Nucleotide.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Protein.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/RNA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/RNA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Ribosome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/genetic/Ribosome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Carre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Carre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point3d.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Point3d.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/TriangleRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/geometry/TriangleRectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookSqlRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/BookSqlRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/CartRow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/CartRow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Cd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Dvd.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Dvd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IBookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IBookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IMedia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/IMedia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Media.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/MediaMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Publisher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/media/Publisher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/IMesureRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/IMesureRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/MesureRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/m2i/poe/mesure/MesureRepository.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,17 +69,17 @@
       <file leaf-file-name="heroes.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="344">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.module.ts">
+      <file leaf-file-name="heroes.component.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="60" />
+            <state relative-caret-position="367">
+              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -46,35 +87,8 @@
       <file leaf-file-name="heroes.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="heroes.component.spec.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.spec.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="327">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -91,26 +105,49 @@
       <file leaf-file-name="hello.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="1" selection-end-column="15" />
+              <caret column="31" selection-start-column="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.html">
+      <file leaf-file-name="bankaccount.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/bankaccount.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="mock-heroes.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/mock-heroes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="325">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="karma.conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/karma.conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-307">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/test.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="62" selection-start-line="17" selection-end-line="17" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unittests.spec.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/unittests.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -145,13 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/codons.txt" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Ribosom.java" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Protein.java" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/GeneticException.java" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Ribosome.java" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/DNARepository.java" />
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Main.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/DNA.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Nucleotide.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/AminoAcid.java" />
@@ -190,12 +220,19 @@
         <option value="$PROJECT_DIR$/src/www/toh/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/hero.ts" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/hello.ts.ts2" />
-        <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" />
-        <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.spec.ts" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/ts/hello.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/ts/hello.js" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/karma.conf.js" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/test.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/ts/unittests.spec.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/app/mock-heroes.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css" />
       </list>
     </option>
   </component>
@@ -323,11 +360,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CVC\M2I\POE\Java\src\www\toh\src\ts" />
+      <recent name="D:\CVC\M2I\POE\Java\ppt\angular" />
       <recent name="D:\CVC\M2I\POE\Java\ppt\angular\6" />
       <recent name="D:\CVC\M2I\POE\Java\src\www\toh\src" />
-      <recent name="D:\CVC\M2I\POE\Java\ppt\angular" />
       <recent name="D:\CVC\M2I\POE\Java\ppt\js" />
-      <recent name="D:\CVC\M2I\POE\Java\src\www\vendor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\CVC\M2I\POE\Java\src\www\toh\src\ts" />
@@ -425,13 +462,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529926128295</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Getter &amp; Setter">
-      <created>1530100906282</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1530100906282</updated>
     </task>
     <task id="LOCAL-00011" summary="TP Account Getter &amp; Setter TODO">
       <created>1530101106681</created>
@@ -769,11 +799,19 @@
       <option name="project" value="LOCAL" />
       <updated>1535984860107</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Angular PPT v2">
+      <created>1536045001693</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1536045001693</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" weight="0.31771597" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -875,7 +913,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Codons.txt" />
     <MESSAGE value="DNA Final" />
     <MESSAGE value="Genetic UML" />
     <MESSAGE value="SQL" />
@@ -900,7 +937,8 @@
     <MESSAGE value="ngApp" />
     <MESSAGE value="Angular6 PPTX" />
     <MESSAGE value="Heroes add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heroes add" />
+    <MESSAGE value="Angular PPT v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular PPT v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -965,36 +1003,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/www/vendor/devicons/css/devicons.css" />
-    <entry file="file://$PROJECT_DIR$/src/www/vendor/devicons/css/devicons.scss" />
-    <entry file="file://$PROJECT_DIR$/src/www/cv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="48" column="245" selection-start-line="48" selection-start-column="245" selection-end-line="48" selection-end-column="245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/essai.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FunctionalMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1164,9 +1172,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -1184,31 +1189,10 @@
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/main.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hello.ts.ts2">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1219,13 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -1233,17 +1210,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1258,6 +1228,82 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/tsconfig.spec.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-307">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="62" selection-start-line="17" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/unittests.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/hello.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/bankaccount.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/mock-heroes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
