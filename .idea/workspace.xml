@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/ts/react.ts" afterDir="false" />
+    <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="Angular 13 Observable">
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/message.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/message.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/www/toh/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/www/toh/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppt/angular/Angular13-RXJS.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/ppt/angular/Angular13-RXJS.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,9 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hero.service.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hero.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="heroes.component.css" pinned="false" current-in-tab="false">
@@ -59,10 +71,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/media.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2222" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="6" selection-end-line="11" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -78,15 +99,10 @@
       <file leaf-file-name="heroes.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="477">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bankaccount.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/bankaccount.ts">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="mock-heroes.ts" pinned="false" current-in-tab="false">
@@ -128,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/AminoAcid.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/Base.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/RNA.java" />
         <option value="$PROJECT_DIR$/src/com/m2i/poe/genetic/genetic.plantuml" />
@@ -179,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.html" />
         <option value="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" />
+        <option value="$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts" />
       </list>
     </option>
   </component>
@@ -263,6 +279,36 @@
               <item name="toh" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="toh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="hero-detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="toh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="heroes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="toh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java" type="b2602c69:ProjectViewProjectNode" />
@@ -398,13 +444,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529926128295</updated>
-    </task>
-    <task id="LOCAL-00014" summary="TP Account + Customer + Transaction">
-      <created>1530110008976</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1530110008976</updated>
     </task>
     <task id="LOCAL-00015" summary="DNA">
       <created>1530192503400</created>
@@ -742,8 +781,24 @@
       <option name="project" value="LOCAL" />
       <updated>1536072198939</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Angular 13">
+      <created>1536140668929</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1536140668929</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -751,18 +806,19 @@
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" weight="0.31771597" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2693997" side_tool="true" visible="true" weight="0.2992126" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.23792094" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7306003" weight="0.2992126" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -775,7 +831,6 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -849,8 +904,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="POM" />
-    <MESSAGE value="JDBC" />
     <MESSAGE value="JDBC GetAll" />
     <MESSAGE value="BookSqlRepository" />
     <MESSAGE value="HTML.pptx" />
@@ -874,7 +927,9 @@
     <MESSAGE value="Angular PPT 8" />
     <MESSAGE value="Angular PPT 11" />
     <MESSAGE value="Media.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Media.ts" />
+    <MESSAGE value="Angular 13" />
+    <MESSAGE value="Angular 13 Observable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular 13 Observable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1127,13 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
@@ -1198,8 +1246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="477">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1224,9 +1272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1244,6 +1289,20 @@
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/media.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2222" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
       </provider>
     </entry>
   </component>
