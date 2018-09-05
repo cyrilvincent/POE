@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="Angular 13 Observable">
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/message.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/message.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/www/toh/src/app/messages/messages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppt/angular/Angular13-RXJS.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/ppt/angular/Angular13-RXJS.pptx" afterDir="false" />
+    <list default="true" id="4c15b6a7-a087-44ae-ac43-c0f9af3d4918" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/www/toh/src/ts/react.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/www/toh/src/ts/react.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,17 +28,26 @@
       <file leaf-file-name="heroes.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="-67">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hero.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hero.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="98">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-10">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -47,8 +55,8 @@
       <file leaf-file-name="heroes.component.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="367">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -56,8 +64,8 @@
       <file leaf-file-name="hero-detail.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="817">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -66,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/react.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -90,8 +98,8 @@
       <file leaf-file-name="hero-detail.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="225">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -100,16 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mock-heroes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/mock-heroes.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -444,13 +443,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529926128295</updated>
-    </task>
-    <task id="LOCAL-00015" summary="DNA">
-      <created>1530192503400</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1530192503400</updated>
     </task>
     <task id="LOCAL-00016" summary="Geometry">
       <created>1530259356518</created>
@@ -788,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536140668929</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Angular 13 Observable">
+      <created>1536149518015</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1536149518015</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -806,7 +805,7 @@
     <layout>
       <window_info anchor="right" id="PlantUML" order="3" weight="0.31771597" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" visible="true" weight="0.32913387" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" visible="true" weight="0.32913387" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -817,7 +816,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2693997" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1168,13 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1247,42 +1239,42 @@
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="367">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="225">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/heroes/heroes.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="-67">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero-detail/hero-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="817">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/ts/react.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1300,8 +1292,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/hero.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="98">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/www/toh/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
