@@ -1,0 +1,6 @@
+npm install -g angular-cli
+npm new toh
+cd toh
+ng serve --open
+ng build --base-href /Java/toh/dist/toh/
+ng generate component heroes
