@@ -14,6 +14,7 @@ const httpOptions = {
 @Injectable({ providedIn: 'root' })
 export class BookService {
 
+  // private booksUrl = '../../../Java/rest/hello/book';  // URL to web api
   private booksUrl = 'api/books';  // URL to web api
 
   constructor(
@@ -31,7 +32,7 @@ export class BookService {
 
   /** GET hero by id. Return `undefined` when id not found */
   getBookNo404<Data>(id: number): Observable<Book> {
-    const url = `${this.booksUrl}/?id=${id}`;
+    const url = `${this.booksUrl}/${id}`;
     return this.http.get<Book[]>(url)
       .pipe(
         map(books => books[0]), // returns a {0|1} element array
