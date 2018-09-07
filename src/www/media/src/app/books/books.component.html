@@ -1,0 +1,21 @@
+<h2>My Books</h2>
+
+<div>
+  <label>Book title:
+    <input #bookName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(bookName.value); bookName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="heroes">
+  <li *ngFor="let book of books">
+    <a routerLink="/detail/{{book.id}}">
+      <span class="badge">{{book.id}}</span> {{book.title}}
+    </a>
+    <button class="delete" title="delete book"
+      (click)="delete(book)">x</button>
+  </li>
+</ul>
