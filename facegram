@@ -1,0 +1,22 @@
+Social Network
+==============
+1/ Un réseau scoail possède des users
+2/ un user se logue avec son mail + mot de passe
+3/ un user a des infos : prénom, nom, ...
+4/ un user a des amis(relation)
+5/ un amis est un user
+6/ un user peut poster des messages
+7/ un message peut être liké
+8/ un message peut être commenté (plusieurs fois)
+9/ un commentaire peut être liké
+10/ sur le "mur" (wall) nous voyons nos messages + les messages des amis
+11/ un message est daté, un commentaire également
+
+But : 
+-Database
+-Entities (OO)
+-Repositories (SQL ou JPA)
+-Services (REST)
+-Client HTML + JS (Angular)
+Langage au choix
+
