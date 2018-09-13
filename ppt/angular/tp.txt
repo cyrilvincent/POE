@@ -2,9 +2,9 @@
 =======
 1/ Installer cordova : npm install -g cordova
 2/ taper cordova -v
-3/ Installer la plateforme Android : cordova platform add android
-4/ Créer le projet suivant cordova create projectname-cordova com.cyrilvincent RVG
-5/ Depuis RVG-cordova installer la plateforme Android
+3/ Créer le projet suivant cordova create projectname-cordova com.cyrilvincent ProjectNameMain
+4/ Installer la plateforme Android : cordova platform add android
+5/ Depuis projectname-cordova installer la plateforme Android
     cordova platform add android
 6/ Faire de même pour iOS : cordova platform add iOS
 7/ Faire de même pour browser : cordova platform add browser
@@ -25,5 +25,6 @@
 15/ Copier le contenu de dist/* vers projectname-cordova/www/
 16/ Ouvrir index.html
 17/ Ajouter la ligne : <script type=”text/javascript” src=”cordova.js”></script>
-18/ Tester sur Android
-19/ Installer le sur votre téléphone
+18/ Modifier la ligne <base href="/">
+19/ Tester sur Android
+20/ Installer le sur votre téléphone
