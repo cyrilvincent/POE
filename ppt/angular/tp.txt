@@ -6,16 +6,17 @@
 4/ Installer la plateforme Android : cordova platform add android
 5/ Depuis projectname-cordova installer la plateforme Android
     cordova platform add android
-6/ Faire de même pour iOS : cordova platform add iOS
+6/ Faire de même pour iOS : cordova platform add ios
 7/ Faire de même pour browser : cordova platform add browser
     Pour info Vidual Studio Code est programmé avec ce mode
 8/ Faire de même pour Windows : cordova platform add windows
 9/ Exécuter la plateforme browser : cordova run browser
-    Il est possible de modifier le fichier RVGCordova/www/index.html
+    Il est possible de modifier le fichier projectname/www/index.html
 11/ Android
     Prérequis Android SDK configuré, Java 8 64 bits, HAXM
     set ANDROID_HOME=D:\Programmes\Android\SDK
     set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
+    Démarrer un AVD
     cordova run android
 12/ Récupérer le .apk dans platforms\android\app\build\outputs\apk\debug et tester sur un smartphone
 13/ Tester cordova run windows
@@ -25,6 +26,6 @@
 15/ Copier le contenu de dist/* vers projectname-cordova/www/
 16/ Ouvrir index.html
 17/ Ajouter la ligne : <script type=”text/javascript” src=”cordova.js”></script>
-18/ Modifier la ligne <base href="/">
+18/ Modifier la ligne <base href=".">
 19/ Tester sur Android
 20/ Installer le sur votre téléphone
